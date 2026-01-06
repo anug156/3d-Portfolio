@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anusha - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#home" class="nav-logo">&lt;Anusha /&gt;</a>
+        <div class="nav-menu" id="nav-menu">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#education" class="nav-link">Education</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-toggle" id="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero" id="home">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <span class="hero-greeting">Hi, I'm</span>
+            <h1 class="hero-name">Anusha</h1>
+            <p class="hero-title">Full Stack Developer</p>
+            <p class="hero-description">
+              I build exceptional digital experiences that combine creativity
+              with cutting-edge technology. Specializing in web development with
+              a passion for creating intuitive and dynamic user interfaces.
+            </p>
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary">
+                <span>View Projects</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                <span>Contact Me</span>
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+          <div class="hero-animation">
+            <canvas id="three-canvas"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="mouse"></div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Skills & Expertise</h2>
+          <p class="section-subtitle">Technologies I work with</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-html5"></i>
+            </div>
+            <h3 class="skill-name">HTML5</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="90"></div>
+            </div>
+            <span class="skill-percentage">90%</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-css3-alt"></i>
+            </div>
+            <h3 class="skill-name">CSS3</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="85"></div>
+            </div>
+            <span class="skill-percentage">85%</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-js"></i>
+            </div>
+            <h3 class="skill-name">JavaScript</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="80"></div>
+            </div>
+            <span class="skill-percentage">80%</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-java"></i>
+            </div>
+            <h3 class="skill-name">Java</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="75"></div>
+            </div>
+            <span class="skill-percentage">75%</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3 class="skill-name">MySQL</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="70"></div>
+            </div>
+            <span class="skill-percentage">70%</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-react"></i>
+            </div>
+            <h3 class="skill-name">React</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="75"></div>
+            </div>
+            <span class="skill-percentage">75%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Some of my recent work</p>
+        </div>
+        <div class="projects-grid" id="projects-grid"></div>
+      </div>
+    </section>
+
+    <section class="education" id="education">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Education</h2>
+          <p class="section-subtitle">My academic journey</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2020 - 2024</div>
+              <h3 class="timeline-title">
+                Bachelor of Science in Computer Science
+              </h3>
+              <p class="timeline-description">University Name</p>
+              <p class="timeline-details">
+                Relevant coursework: Data Structures, Algorithms, Web
+                Development, Database Systems, Software Engineering
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2018 - 2020</div>
+              <h3 class="timeline-title">High School Diploma</h3>
+              <p class="timeline-description">School Name</p>
+              <p class="timeline-details">
+                Focus on Mathematics and Computer Science
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Let's work together</p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <h4>Email</h4>
+                <p>ganusha902@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div>
+                <h4>Phone</h4>
+                <p>+91 7993958580</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <h4>Location</h4>
+                <p>Guntur,Andhra pradesh,India</p>
+              </div>
+            </div>
+            <div class="social-links">
+              <a
+                href="https://github.com/yourusername"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://linkedin.com/in/yourusername"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="https://twitter.com/yourusername"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+          </div>
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
+              <span class="error-message" id="name-error"></span>
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <span class="error-message" id="email-error"></span>
+            </div>
+            <div class="form-group">
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <span class="error-message" id="message-error"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2024 Your Name. All rights reserved.</p>
+          <div class="footer-actions">
+            <button
+              id="theme-toggle"
+              class="theme-toggle"
+              aria-label="Toggle theme"
+            >
+              <i class="fas fa-moon"></i>
+            </button>
+            <button
+              id="scroll-top"
+              class="scroll-top"
+              aria-label="Scroll to top"
+            >
+              <i class="fas fa-arrow-up"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
